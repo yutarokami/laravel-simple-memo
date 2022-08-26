@@ -74,9 +74,9 @@
                 </div>
             </div>
         </nav>
-        <main class="py-4">
+        <main class="">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 p-0">
                     <div class="card">
                         <div class="card-header">左カラム</div>
                         <div class="card-body">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 p-0">
                     <div class="card">
                         <div class="card-header">中央カラム</div>
                         <div class="card-body">
@@ -92,7 +92,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 p-0">
                     右カラム
                     @yield('content')
                 </div>
