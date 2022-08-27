@@ -16,9 +16,10 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    
 </head>
 <body>
     <div id="app">
@@ -93,7 +94,7 @@
                 </div>
                 <div class="col-md-4 p-0">
                     <div class="card">
-                        <div class="card-header">メモ一覧</div>
+                        <div class="card-header">メモ一覧 <a href="{{ route('home') }}"><i class="fa-solid fa-circle-plus"></i></a></div>
                         <div class="card-body">
                             @foreach ($memos as $memo)
                                 <a href="/edit/{{$memo['id']}}" class="card-text d-block">{{ $memo['content'] }}</a>
